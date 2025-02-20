@@ -1,0 +1,98 @@
+/* Nocturnal Tavern Website Styles */
+
+body {
+    background-color: #000000; /* Black background */
+    color: #FFD700; /* Gold text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    color: #FFD700;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #FFD700;
+}
+
+nav a {
+    color: #FFD700;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #FFD700;
+    color: #000000;
+}
+
+footer {
+    background-color: #000000;
+    color: #FFD700;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #FFD700;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #FFD700;
+}
+
+button {
+    background-color: #FFD700;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+}
+
+nav {
+    background-color: #000000;
+    border-bottom: 2px solid #FFD700;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center;
+    gap: 20px; /* Space between items */
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    color: #FFD700;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #FFD700;
+    color: #000000;
+    border-radius: 5px;
+}
