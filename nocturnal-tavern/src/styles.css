@@ -1,8 +1,16 @@
 /* Nocturnal Tavern Website Styles */
 
 body {
-    background-color: #000000; /* Black background */
-    color: #FFD700; /* Gold text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000000;
+    color: #FFD700;
+    background-image: url('./assets/pattern.png');
+    background-size: cover;  /* Ensures the image covers the entire screen */
+    background-position: center;
+    background-repeat: repeat; /* Repeats the pattern */
+    color: #FFD700; 
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -14,6 +22,12 @@ header {
     padding: 20px;
     text-align: center;
     border-bottom: 2px solid #FFD700;
+    height: 100px;
+}
+
+.header-logo {
+    height: 100px;
+    width: auto;
 }
 
 nav a {
@@ -34,17 +48,18 @@ footer {
     text-align: center;
     padding: 10px;
     border-top: 2px solid #FFD700;
-    position: fixed;
     width: 100%;
+    position: relative; /* Change from fixed to relative */
     bottom: 0;
 }
 
 .container {
-    padding: 20px;
+    flex: 1; /* Pushes content down to prevent overlap */
+    padding-bottom: 50px; /* Ensures space before the footer */
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #FFD700;
+    color: #E3CBA7; /* Warm beige for headings */
 }
 
 button {
@@ -96,3 +111,66 @@ nav a:hover {
     color: #000000;
     border-radius: 5px;
 }
+
+/* Center headers */
+h2, h3 {
+    text-align: center;
+    color: #FFD700; /* Keeps the golden color */
+    margin-bottom: 15px;
+}
+
+/* Improve body text layout */
+.container {
+    max-width: 800px; /* Sets a maximum width */
+    margin: 0 auto; /* Centers the content */
+    padding: 20px;
+    text-align: justify; /* Justifies text for a cleaner look */
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Adds space between paragraphs */
+    color: #FFFFF0; /* Soft ivory for readability */
+}
+
+.instagram-feed {
+    margin-bottom: 50px; /* Adds space between Instagram feed and footer */
+}
+
+.contact-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.contact-links li {
+    margin: 10px 0;
+}
+
+.contact-links a {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 18px;
+    color: #FFD700;
+    background: #000;
+    border: 2px solid #FFD700;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.contact-links a:hover {
+    background: #FFD700;
+    color: #000;
+}
+
+
+

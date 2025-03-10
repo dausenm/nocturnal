@@ -1,7 +1,10 @@
+import logo from '../assets/logo.png'; // Import the logo
+
+
 function Header() {
     return (
         <header>
-            <h1>Welcome to Nocturnal Tavern</h1>
+            <img src={logo} alt="Nocturnal Tavern Logo" className="header-logo" />
         </header>
     );
 }

@@ -21,7 +21,7 @@ function Home() {
 
             <h3>🎷 Live Jazz, Unforgettable Nights 🎷</h3>
             <p>
-                The night comes alive with more than just drinks—we host <strong>regular jazz nights, live performances, and special events</strong> 
+                The night comes alive with more than just drinks—we host <strong>regular jazz nights, live performances, and special events </strong> 
                 that bring a touch of vintage glamour to your evening. Lose yourself in the sultry sounds of saxophones, 
                 sip on something smooth, and let the music carry you away. From pop-up tastings to curated theme nights, 
                 <strong>there’s always something happening at Nocturnal Tavern</strong>—the only question is, are you ready to join the revelry?
@@ -29,7 +29,7 @@ function Home() {
 
             <h3>✨ Join Us Under the Golden Glow ✨</h3>
             <p>
-                No matter what brings you through our doors, Nocturnal Tavern promises <strong>an evening of intrigue, indulgence, and impeccable hospitality.</strong> 
+                No matter what brings you through our doors, Nocturnal Tavern promises <strong>an evening of intrigue, indulgence, and impeccable hospitality. </strong> 
                 So stay awhile, sip something delicious, and revel in the magic of the night.
             </p>
 
