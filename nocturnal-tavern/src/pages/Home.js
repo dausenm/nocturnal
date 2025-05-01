@@ -1,40 +1,63 @@
-import InstagramFeed from "../components/InstagramFeed";
+import { useNavigate } from "react-router-dom";
+import menuImg from "../assets/menu.jpg";
+import aboutImg from "../assets/about.jpg";
+import contactImg from "../assets/contact.jpg";
 
 function Home() {
+    const navigate = useNavigate();
+
+    const sections = [
+        { title: "Menu", image: menuImg, path: "/menu" },
+        { title: "About", image: aboutImg, path: "/about" },
+        { title: "Contact", image: contactImg, path: "/contact" }
+    ];
+
     return (
-        <div className="container">
-            <h2>Welcome to Nocturnal Tavern</h2>
-            <p>
-                Darlings of the dark and devotees of the divine, your search for the perfect evening ends here. 
-                Step into <strong>Nocturnal Tavern</strong>, where the air hums with the warmth of candlelight, the clink of glasses, and the 
-                unmistakable melody of a night well spent. Whether you're in the mood for an artfully crafted cocktail, 
-                a deep pour of your favorite spirit, or a cold pint of something local, we pride ourselves on serving 
-                <em> libations as bold as the company you keep.</em>
-            </p>
+        <div className="home-wrapper">
+            <div className="home-sections">
+                {sections.map((section, index) => (
+                    <div 
+                        key={index} 
+                        className="home-panel"
+                        style={{ backgroundImage: `url(${section.image})` }}
+                        onClick={() => navigate(section.path)}
+                    >
+                        <div className="overlay">
+                            <h2>{section.title}</h2>
+                        </div>
+                    </div>
+                ))}
+            </div>
 
-            <p>
-                But Nocturnal Tavern is more than a bar—it’s a haven. A place where <strong>friendly service meets an atmosphere of effortless cool</strong>, 
-                where every guest is welcomed like an old friend. Whether you're cozied up in a shadowy booth for an 
-                intimate conversation or gathered around the bar swapping stories with fellow night owls, you’ll find 
-                 <em> a home among the moonlit misfits of Tuscaloosa.</em>
-            </p>
-
-            <h3>🎷 Live Jazz, Unforgettable Nights 🎷</h3>
-            <p>
-                The night comes alive with more than just drinks—we host <strong>regular jazz nights, live performances, and special events </strong> 
-                that bring a touch of vintage glamour to your evening. Lose yourself in the sultry sounds of saxophones, 
-                sip on something smooth, and let the music carry you away. From pop-up tastings to curated theme nights, 
-                <strong>there’s always something happening at Nocturnal Tavern</strong>—the only question is, are you ready to join the revelry?
-            </p>
-
-            <h3>✨ Join Us Under the Golden Glow ✨</h3>
-            <p>
-                No matter what brings you through our doors, Nocturnal Tavern promises <strong>an evening of intrigue, indulgence, and impeccable hospitality. </strong> 
-                So stay awhile, sip something delicious, and revel in the magic of the night.
-            </p>
-
-            <p>Check out our latest Instagram posts!</p>
-            <InstagramFeed />
+            <div className="home-description">
+                <h1>
+                    Nocturnal Tavern
+                </h1>
+                <p>
+                    Welcome to Nocturnal Tavern – your favorite downtown destination for bold drinks, smooth jazz, 
+                    and late-night magic. Scroll, sip, and explore what we have in store.
+                </p>
+                <h1>
+                    Happy Hour: Weekdays 5-8
+                </h1>
+                <p>
+                    Enjoy happy hour Monday - Friday, with deals like:
+                        -$5 Well Liquor Pours
+                        -$8 Classic Cocktails
+                </p>
+                <h1>
+                    Join us for Whiskey Wednesday!
+                </h1>
+                <p>
+                    Venture into the tavern on any Wednesday night and enjoy an excellent old fashioned with any buffalo trace product (Sazerac Rye, Buffalo Trace, Eagle Rare, 1792) for $5 off regular price!
+                </p>
+                <h1>
+                    Thursdays: Jazz Night
+                </h1>
+                <p>
+                    Join us on Thursday nights for live music. Head over to our Instagram page for more information on who is playing and when. Also, bring that special someone and split a bottle of wine for half off any Thursday night.
+                </p>
+            </div>
         </div>
     );
 }

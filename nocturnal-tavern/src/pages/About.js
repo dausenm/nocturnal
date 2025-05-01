@@ -10,7 +10,7 @@ function About() {
                 to provide the best experience for our guests. Whether you're looking for a quiet evening with friends, a lively night out, or a
                 memorable event, Nocturnal Tavern is the place to be.
             </p>
-            <h3>📍 Find Us Here</h3>
+            <h3>Visit Us</h3>
             <div className="map-container">
                 <iframe
                     title="Nocturnal Tavern Location"
